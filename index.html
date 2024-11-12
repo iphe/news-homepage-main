@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  
+    <link rel="stylesheet" href="style.css">
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span></a></li>
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Training</li>
+      <li>Categories</li> 
+    </ul>
+    <ul>
+      <li>W.</li>
+      <li class="hidemobile">Home</li>
+      <li class="hidemobile">New</li>
+      <li class="hidemobile">Popular</li>
+      <li class="hidemobile">Training</li>
+      <li class="hidemobile">Categories</li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="main-container">
+    <div class="columns">
+      <div class="text">
+        <img src="img1.png" alt="">
+        <div class="container">
+          <div class="first-heading"><h2> The Bright <br> Future of <br> Web 3.0?</h2></div>
+          <div class="paragraph"><P> We dive into the next evolution of the web that <br> claims to put the
+            power of the platforms back <br>
+            into the hands of the people. 
+            But is it really <br>fulfilling its promise?</P>
+            <div><button class="btn"><a href="">READ MORE</a></button></div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="column1">
+        <div class="borderline">
+          <h1><span>New</span></h1>
+          <h4 style="margin-top: 1rem;"> Hydrogen VS Electric Cars</h4>
+          <p>Will hydrogen-fueled cars ever catch up to <br> EVs?</p>
+        </div>
+        <div class="borderline">
+          <h4>The Downsides of AI Artistry</h4>
+          <p> What are the possible adverse effects of <br>on-demand AI image generation?</p>
+        </div>
+        <div class="bottom-text">
+          <h4> Is VC Funding Drying Up?</h4>
+          <p> Private funding by VC firms is down 50% <br> YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="parent-container">
+      <div class="child-container">
+        <div><img src="img2.png" alt=""></div>
+        <div class="child-container-text">
+          <h1>01</h1> 
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs <br> are given modern upgrades?</p>
+        </div>    
+      </div>
+      <div class="child-container">
+        <div><img src="img2.png" alt=""></div>
+        <div class="child-container-text">
+          <h1>02</h1> 
+          <h4>Top 10 Laptops of 2022</h4>
+          <p> Our best picks for various <br> needs and budgets.</p>
+        </div>    
+      </div>
+      <div class="child-container">
+        <div><img src="img2.png" alt=""></div>
+        <div class="child-container-text">
+          <h1>03</h1> 
+          <h4>The Growth of Gaming</h4>
+          <p>How the pandemic has <br>sparked fresh opportunities.</p>
+        </div>    
+      </div>
+    </div>
+  </div>
+    
+  
+  
+
+
+
+
+
+  <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+
+    }
+  </script>     
+</body>
+</html>
